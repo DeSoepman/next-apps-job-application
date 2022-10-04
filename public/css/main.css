@@ -48,7 +48,7 @@ header a {
 .countries-container {
     display: flex;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     flex-wrap: wrap;
 }
 
@@ -63,6 +63,7 @@ header a {
 
 .countries-container .country input {
     margin-right: 5px;
+    accent-color: #fcd269;
 }
 
 .countries-container .country:hover, .countries-container .country .active {
@@ -81,16 +82,28 @@ header a {
     gap: 5px;
 }
 
-.search-container input[type=text] {
-    width: 100%;
+.search-container input, .search-container a.button {
     padding: 10px;
     border-radius: 10px;
+}
+
+.search-container input[type=text] {
+    width: 100%;
     border: 1px solid #d8d8d8;
 }
 
-.search-container input[type=submit], a.button {
-    padding: 10px;
-    border-radius: 10px;
+.search-container input[type=text]:focus {
+    outline-color: #ff80b2;
+    outline-width: 1px;
+}
+
+.search-container input[type=submit] {
+    color: #FFF;
+    background-color: #ff80b1;
+    border: 1px solid #ff76b9;
+}
+
+.search-container a.button {
     border: 1px solid #d8d8d8;
     background: #efefef;
 }
