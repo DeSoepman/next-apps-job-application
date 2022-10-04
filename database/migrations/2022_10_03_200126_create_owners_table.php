@@ -20,24 +20,6 @@ return new class extends Migration
             $table->string('last_name');
             $table->timestamps();
         });
-
-        DB::table('owners')->insert([
-            [
-                'business_id' => 1,
-                'first_name' => 'Wim',
-                'last_name' => 'Van Buynder'
-            ],
-            [
-                'business_id' => 1,
-                'first_name' => 'Christophe',
-                'last_name' => 'Todts'
-            ],
-            [
-                'business_id' => 1,
-                'first_name' => 'Sander',
-                'last_name' => 'Versluys'
-            ]
-        ]);
     }
 
     /**

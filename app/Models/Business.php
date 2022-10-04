@@ -42,20 +42,6 @@ class Business extends Model
         $q = $q->join('countries', 'businesses.country_id', '=', 'countries.id');
         $q = $q->select('businesses.*', 'countries.name AS country');
 
-        return $q->get();
-    }
-
-    protected function city(): Attribute
-    {
-        return Attribute::make(
-            get: fn ($value, $attributes) => explode(',', $attributes['address'])[1],
-        );
-    }
-
-    protected function street(): Attribute
-    {
-        return Attribute::make(
-            get: fn ($value, $attributes) => explode(',', $attributes['address'])[0],
-        );
+        return $q->cursorPaginate(6);
     }
 }

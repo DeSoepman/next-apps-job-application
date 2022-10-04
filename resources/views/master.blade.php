@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <div class="title">
-                Backend Job Application - Ruben Pauwels
+                <a href="{{ route('home') }}">Backend Job Application - Ruben Pauwels</a>
             </div>
         </div>
     </header>

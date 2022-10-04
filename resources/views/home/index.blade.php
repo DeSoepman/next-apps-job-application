@@ -28,4 +28,5 @@
             </a>
         @endforeach
     </div>
+    {{ $businesses->appends($_GET)->links() }}
 @endsection

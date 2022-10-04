@@ -19,16 +19,6 @@ return new class extends Migration
             $table->string('name');
             $table->timestamps();
         });
-
-        DB::table('countries')->insert([
-            ['code' => 'fr',    'name' => 'France'],
-            ['code' => 'be',    'name' => 'Belgium'],
-            ['code' => 'nl',    'name' => 'The Netherlands'],
-            ['code' => 'gb',    'name' => 'Great-Britain'],
-            ['code' => 'de',    'name' => 'Germany'],
-            ['code' => 's',     'name' => 'Spain'],
-            ['code' => 'i',     'name' => 'Italy'],
-        ]);
     }
 
     /**
